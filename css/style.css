@@ -1,0 +1,1401 @@
+/*======================================= GOOGLE FONTS =======================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;600;700&display=swap');
+
+/*======================================= VARIABLES CSS =======================================*/
+
+:root {
+  --header-height: 3rem;
+
+  /*============= Colors =============*/
+  --hue-color: 208;
+
+
+  /* HSL color mode */
+
+  --first-color: hsl(var(--hue-color), 69%, 61%);
+  --first-color-second: hsl(var(--hue-color), 69%, 61%);
+  ;
+  --first-color-alt: hsl(var(--hue-color), 57%, 53%);
+  --first-color-lighet: hsl(var(--hue-color), 92%, 85%);
+  --title-color: hsl(var(--hue-color), 8%, 15%);
+  --text-color: hsl(var(--hue-color), 8%, 45%);
+  --input-color: hsl(var(--hue-color), 8%, 65%);
+  --body-color: hsl(var(--hue-color), 60%, 99%);
+  --nav-color-button: hsl(var(--hue-color), 18%, 10%)
+    /* ========================== Font and typography ==========================*/
+
+    --body-font: 'Red Hat Display', sans-serif;
+
+  /* .5rem = 8px, 1rem = 16px, 1.5 rem = 24px ... */
+
+  --big-font-size: 2rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1.125rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+  --smaller-font-size: ;
+
+  /*=================== Font wight ===================*/
+  --font-medium: 500;
+  --font-semi-bold: 600;
+
+
+  /* ========================== Margenes Bottom ==========================*/
+
+  --mb-0-25: .25rem;
+  --mb-0-5: .5rem;
+  --mb-0-75: .75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+  --mb-3: 3rem;
+
+  /*===================== z index =====================*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000;
+
+}
+
+/*Font size for large devices*/
+
+@media screen and (min-width: 764px) and (max-width: 2500px) {
+  :root {
+    --big-font-size: 3rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875;
+    --smaller-font-size: .813rem;
+
+  }
+
+  .margine {
+    margin-left: 124px;
+    margin-right: 124px;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .nav {
+    height: calc(var(--header-height) + 1.5rem);
+
+  }
+
+  .grid {
+    display: none;
+  }
+
+  .header_info {
+    font-size: 2em;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    max-width: 8rem;
+  }
+
+  .title_home_text {
+    display: none;
+  }
+
+  .title_home {
+    display: none;
+  }
+
+  .section {
+
+    max-width: auto;
+
+  }
+
+  .first_header {
+    height: 40px;
+    background: #1F262C;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.25);
+
+  }
+
+  .second_header {
+    background: white;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.25);
+    height: 100px;
+  }
+
+  .icons-grid-container {
+    margin-top: 0px;
+
+  }
+
+  .icons-grid-container {
+
+    display: grid;
+    height: 40px;
+    grid-template-columns: repeat(3, auto);
+    column-gap: 10em;
+  }
+
+
+  .home__social {
+    display: flex;
+    justify-content: right;
+
+  }
+
+  #home {
+    max-height: 3.6em;
+  }
+
+  /* LANGUAGE BUTTON */
+  .home__container {
+    grid-template-columns: repeat(2, auto);
+  }
+
+  .home_language {
+    position: absolute;
+    display: flex;
+    float: right;
+  }
+
+  .language-button-container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: space-evenly;
+    margin-top: 0.65em;
+    width: 7em;
+    height: 2.3em;
+    border-radius: 0.65em;
+    float: right;
+    background: rgb(151, 165, 175);
+    gap: 0px;
+  }
+
+  .section_image {
+    width: auto;
+    height: 926px;
+  }
+
+  .header {
+    display: none;
+  }
+
+  .nav {
+    height: 114px;
+    column-gap: 1rem;
+
+  }
+
+  .nav__icon,
+  .nav__close,
+  .nav__toggle {
+    display: none;
+  }
+
+  .nav__list {
+    display: flex;
+    column-gap: 2rem;
+
+  }
+
+  .nav__menu {
+    margin-left: auto;
+  }
+
+  /* show menu */
+  .show-menu {
+    bottom: 0;
+
+  }
+
+  li, a, button{
+    font-weight: 500;
+    font-size:16px;
+    color:white;
+    text-decoration: none;    
+  }
+  
+  header{
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding:10px 10%;
+    background: rgb(255, 255, 255);
+    margin: 0px;
+  }
+  
+  .___nav_links{
+    list-style: none;
+  }
+  
+  .___nav_links li{
+    display: inline-block;
+    padding: 0px 20px;
+  }
+  
+  .___nav_links li a{
+    transition: all 0.3s ease 0s;
+  }
+  
+  .___nav_links li a:hover{
+    color:#0088a9;
+  }
+  
+  button{
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: rgba(0,136,169,1);
+    border:none;
+    border-radius: 50px;
+    cursor:pointer;
+    transition: all 0.3s ease 0s;
+  }
+  
+  button:hover{
+    background-color: rgba(0,136,169,0.8);
+  }
+  
+  .___logo{
+    cursor:pointer;
+    margin-right:auto;
+  }
+  
+  .___numeLiceu{
+    margin-right:auto;
+  }
+  
+  .dropdown{
+    margin-left:auto;
+  }
+  
+  ul li ul.dropdown li{
+    display: block;
+  }
+  
+  
+  ul li ul.dropdown{
+    width: 5%;
+    background: #22438C;
+    position:absolute;
+    z-index:999;
+    display:none;
+  }
+  
+  ul li:hover ul.dropdown{
+    margin-top:6px;
+    display:block;
+  }
+  
+  
+  nav ul li a{
+    position:relative;
+    color:black;
+    font-size:18px;
+    padding:5px 0;
+  }
+  
+  nav ul li a:before{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background: rgb(61, 45, 231);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .4s linear;
+  }
+  
+  nav ul li a:hover:before{
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  
+  
+  .___option:hover{
+    background: black;
+  }
+  
+  .___titlu{
+      font-size: 4rem;
+      z-index: -10;
+      color:white;
+      text-align: center;
+      text-shadow: 0px 3px 6px black;
+  }
+  
+  .___linie{
+      border-bottom:4px solid #ccc;
+      width:80%;
+      display: block;
+      margin-left:auto;
+      margin-right:auto;
+  }
+  
+  .___linie_2{
+    border-bottom:4px solid #ccc;
+    width:40%;
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+  }
+  
+  /* PROFESORI */
+  
+  .___director{
+    z-index: -10;
+    display:block;
+    margin-left:16rem;
+  }
+  
+  .___director_adjunct{
+    color:white;
+    z-index: -10;
+    display:block;
+    margin-left:16rem;
+  }
+  
+  .___lista_directori{
+    color:white;
+    display: flex;
+    text-align: center;
+    margin-left:16rem;
+    z-index: -10;
+    font-size: 2rem;
+  }
+  
+  .___director_text{
+    color:white;
+    text-shadow: 0px 3px 6px black;
+  }
+  
+  
+  .___lista_profesori{
+    color:white;
+    display: flex;
+    text-align: center;
+    margin-left:16rem;
+    z-index: -10;
+    font-size: 2rem;
+  }
+  .center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+
+  }
+  .___profesor{
+    z-index: -10;
+    display:block;
+    margin-left:6rem;
+  }
+  
+  .___profesor_text{
+    color:white;
+    text-shadow: 0px 3px 6px black;
+  }
+  
+  .___fundal_transparent{
+    width:90%;
+    margin-left:auto;
+    margin-right:auto;
+    background:rgba(255, 255, 255, 0.2);
+  }
+   /*
+    FOOTER
+   */
+   .footer{
+    background-color: #222;
+    color: #fff;
+    font-size: 14px;
+    bottom: 0;
+    height:20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 999;
+}
+.footer p {
+    margin: 10px 0;
+    font-family: 'Red Hat Dsiplay' sans-serif;
+}
+
+  
+  /* SUBIECTE FIZICA */
+  
+  .___fizica_lista{
+    display: flex;
+    margin:auto;
+  }
+  
+  .___fizica_capitol{
+    margin:auto;
+  }
+  
+  .___fizica_capitol_text{
+    width:250px;
+    color:white;
+    text-align:center;
+    font-size: 2rem;
+    -webkit-text-stroke-width: 0px;
+    -webkit-text-stroke-color: black;
+    text-shadow: 0px 3px 6px black;
+  }
+  
+  .___subiecte_lista{
+    width: 250px;
+    display: inline-block;
+    text-align: center;
+    margin:auto;
+  }
+  
+  .___subiect{
+    margin:auto;
+    text-align: center;
+    background:white;
+    margin-top:2rem;
+  }
+  
+  .___subiect:hover{
+    
+    background:black;
+    color:white;
+  }
+  
+  
+  .___lista_sectiuni_circulare{
+    display:flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .___sectiune_circulara{
+    border-radius:50%;
+    background:white;
+    width:20rem;
+    height: 20rem;
+    margin:4rem;
+    
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  
+    box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.25);
+  }
+  
+  .___sectiune_circulara_text{
+    padding:20px;
+    text-align: center;
+  }
+  
+  .___sectiune_circulara_text_titlu{
+    padding:20px;
+    text-align: center;
+  }
+  
+  .___sectiune_circulara_text_desc{
+    padding:20px;
+    text-align: center;
+  }
+  
+  .___sectiune_circulara_elem{
+   text-align: center;
+  }
+  
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto;
+    background-color: #ffffff;
+    padding: 2px;
+    margin:1rem;
+  }
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  .luni8{
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  .___clase{
+    display: block;
+  }
+  
+  .___form_target{
+    color:white;
+    text-align: center;
+  }
+  
+  .___clase_label{
+    color:white;
+  }
+  
+  
+  
+  .___electromures_poza_sect{
+    text-align: center;
+    padding-bottom:2rem;
+    margin-bottom:1rem;
+  }
+  
+  .___electromures_poza{
+    width:80%;
+    height: 80%;
+  }
+  
+  
+  .___text_istoric{
+    color:white;
+    padding:4rem;
+    font-size:20px;
+  }
+  .___contact_text{
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    text-align:center;
+    color:white;
+  }
+  .card{
+    border-radius: 10px;
+    background-color:#000000
+  }
+
+  .card-image {
+    position: relative;
+    height: 150px;
+    width: 150px;
+
+  }
+  .card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+  }
+
+  .carousel-container{
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+}
+
+
+
+/*===================== Variables Dark theme =====================*/
+
+
+/*===================== Button Dark/Light =====================*/
+
+
+
+/*===================== BASE =====================*/
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url(../img/meetings-bg.jpg);
+  background-size: cover;
+  background-repeat: no-reapeat;
+  background-attachment: fixed;
+  background-position: center;
+  margin: 0 0 var(--header-heigth) 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  color: var(--text-color);
+
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*===================== REUSABLE CSS CLASSES =====================*/
+
+
+
+
+.responsive_image {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/scoala1.jpg);
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+
+.section {
+  min-width: 370px;
+  max-width: 768px;
+  height: 59px;
+  left: 0px;
+  top: 0px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/*======= ISTORIC =======*/
+
+
+
+/* === GATA ISTORIC  ===*/
+
+
+/* === EVENIMENTE PAGINA PRINCIPALA === */
+
+.eveniment_principal {
+  margin-top: 50px;
+  position: sticky;
+  height: 100%;
+  background-image: url(/img/event.jpg);
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  box-shadow: inset 0px -50px 6px rgba(0, 0, 0, 0.4);
+}
+
+.container_eveniment_button {
+  float: right;
+  margin-top: 10.5em;
+  margin-right: 6.5em;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  max-width: 30px;
+  grid-column-gap: 10px;
+  justify-items: stretch;
+}
+
+.eveniment_button {
+  padding: 23px 23px;
+  cursor: pointer;
+  text-align: center;
+  background-color: #1E1E1E;
+  color: black;
+  box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+}
+
+.eveniment_button:hover {
+  opacity: 0.7;
+}
+
+.logo_1 {
+  left: 0px;
+  top: 0px;
+  width: 96px;
+  height: 90px;
+  background-image: url(../img/logo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.responsive_image {
+  width: 100%;
+  height: 100%;
+  background-image: url(/img/scoala1.jpg);
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.title_home {
+  float: right;
+  right: 20px;
+  top: 250px;
+  width: 265px;
+  height: 45px;
+}
+
+.title_home_text {
+  margin-top: 6em;
+  margin-right: 1em;
+  position: relative;
+  font-family: 'Red Hat Text';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: right;
+  color: #FFFFFF;
+  -webkit-text-stroke: 0.5px solid #000000;
+  text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+
+/*Bell - home section*/
+
+.grid-icon {
+  font-size: 2.2em;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  max-width: 3rem;
+}
+
+.home__social {
+  display: flex;
+  padding-right: auto;
+}
+
+#home {
+  max-height: 3.6em;
+}
+
+/* LANGUAGE BUTTON */
+.home__container {
+  grid-template-columns: repeat(2, auto);
+}
+
+.home_language {
+  position: absolute;
+  display: flex;
+  float: right;
+}
+
+.language-button-container {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-content: space-evenly;
+  margin-top: 0.65em;
+  width: 7em;
+  height: 2.3em;
+  border-radius: 0.65em;
+  float: right;
+  background: rgb(151, 165, 175);
+  gap: 0px;
+}
+
+.text_lang {
+  position: relative;
+  font-family: 'Red Hat Text';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.1em;
+  color: white;
+  margin-top: 0.5em;
+  width: 100%;
+  height: 100%;
+}
+
+.flag {
+  position: relative;
+  background-image: url(/img/maghiara.png);
+  width: 100%;
+  height: 100%;
+}
+
+/*===================== LAYOUT =====================*/
+
+.container {
+  max-width: 768px;
+  margin-left: var(--mb-1-5);
+  margin-right: var(--mb-1-5);
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+  background-color: var(--body-color);
+}
+
+
+
+/*===================== NAV =====================*/
+
+
+@media screen and (max-width: 767px) {
+  .nav__menu {
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--body-color);
+    padding: 2rem 1.5rem 4rem;
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
+    border-radius: 1.5rem 1.5rem 0 0;
+    transition: .3s;
+  }
+
+  .section_wrapper {
+    max-width: 768px;
+
+  }
+
+  .smartphone {
+    display: none;
+  }
+
+  .section {
+
+    min-width: 370px;
+    height: 59px;
+    left: 0px;
+    top: 0px;
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  .icons-grid-container {
+    margin-top: 0.5em;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    column-gap: 2em;
+  }
+
+  .grid-icon {
+    font-size: 2.2em;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    max-width: 3rem;
+  }
+
+  .home__social {
+    display: flex;
+    padding-right: auto;
+  }
+
+  #home {
+    max-height: 3.6em;
+  }
+
+  /* LANGUAGE BUTTON */
+  .home__container {
+    grid-template-columns: repeat(2, auto);
+  }
+
+  .home_language {
+    position: absolute;
+    display: flex;
+    float: right;
+  }
+
+  .language-button-container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: space-evenly;
+    margin-top: 0.65em;
+    width: 7em;
+    height: 2.3em;
+    border-radius: 0.65em;
+    float: right;
+    background: rgb(151, 165, 175);
+    gap: 0px;
+  }
+
+  /* ===== DE AICI PANA LA LAYOUT POTI SA STERGI TOT ===== */
+  .text_lang {
+    position: relative;
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.1em;
+    color: white;
+    margin-top: 0.5em;
+    width: 100%;
+    height: 100%;
+  }
+
+  .flag {
+    position: relative;
+    background-image: url(../img/maghiara.png);
+    width: 100%;
+    height: 100%;
+  }
+
+  .section_image {
+    min-width: 370px;
+    max-width: 768px;
+    height: 215px;
+
+
+  }
+
+  .nav {
+    max-width: 767;
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav__logo,
+  .nav__toggle {
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+  }
+
+  .nav__logo:hover {
+    color: var(--first-color);
+  }
+
+  .nav__toggle {
+    font-size: 1.1rem;
+    cursor: pointer;
+  }
+
+  .nav__toggle:hover {
+    color: var(--first-color);
+  }
+
+  .nav__list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  .nav__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: var(--small-font-size);
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+  }
+
+  .nav__link:hover {
+    color: var(--first-color);
+  }
+
+  .nav__icon {
+    font-size: 1.2rem;
+  }
+
+  .nav__close {
+    position: absolute;
+    right: 1.3rem;
+    bottom: .5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--first-color);
+  }
+
+  .nav__close:hover {
+    color: var(--first-color-alt);
+  }
+
+  .section_image {
+    min-width: 370px;
+    max-width: 768px;
+    height: 215px;
+  }
+  
+  
+  .video_liceu {
+    width: auto;
+    height: 240px;
+    overflow: hidden;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .video_liceu2 {
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    object-fit: cover;
+    box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.25), inset 10px -10px 15px 1px rgba(0, 0, 0, 0.12), inset -10px 10px 4px 1px rgba(0, 0, 0, 0.12);
+  }
+  
+  .section_content_istoric {
+    margin-left: 5%;
+    margin-right: 5%;
+    max-width: 700px;
+    height: auto;
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+  .text_istoric {
+    margin-top: 4%;
+    padding-top: 7%;
+    padding-right: 4%;
+    padding-left: 4%;
+    padding-bottom: 18%;
+    max-width: 650px;
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: left;
+    color: #FFFFFF;
+  }
+  .event_title {
+
+    height: 50px;
+    top: 274px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  
+  .event_title_center {
+  
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    display: flex;
+  }
+  
+  
+  
+  .section_title {
+    display: block;
+    font-size: var(--small-font-size);
+    margin-bottom: var(--mb-3);
+  
+  }
+  
+  .section__title,
+  .section__subtitle {
+    text-align: center;
+  
+  }
+  .text_lang {
+    position: relative;
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.1em;
+    color: white;
+    margin-top: 0.5em;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .flag {
+    position: relative;
+    background-image: url(../img/maghiara.png);
+    width: 100%;
+    height: 100%;
+  }
+  
+  .section_wrapper {
+    max-width: 768px;
+  
+  }
+  .event_background {
+    background-color: #151A1E;
+    min-width: 369px;
+    border: 0.3px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 10px -10px 15px 1px rgba(0, 0, 0, 0.12), inset -10px 10px 4px 1px rgba(0, 0, 0, 0.12);
+  }
+
+  .section_wrapper {
+    max-width: 768px;
+  }
+
+}
+
+
+/* show menu */
+.show-menu {
+  bottom: 0;
+
+}
+
+
+
+
+/*TUDOR*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ====== LICEE PARTENERE ======= */
+/* TREBUIE FACUT FUNDALUL RESPONSIVE */
+.section_content_licee-partenere {
+  margin-left: 5%;
+  margin-right: 5%;
+  max-width: 700px;
+  height: 96em;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.licee-partenere_grid-container {
+  display: grid;
+  height: 40px;
+  grid-template-rows: repeat(3, auto);
+  row-gap: 2em;
+}
+
+.liceu_partener_img {
+  margin-top: 3em;
+  max-width: 20em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text_nume-liceu-partener {
+  margin-top: 6%;
+  font-family: 'Red Hat Text';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.text-subiecte-bac {
+  margin-top: 4%;
+  font-size: 14px;
+}
+
+.footer_subiecte-bac {
+  margin-bottom: 20%;
+  margin-top: 4%;
+  font-size: 14px;
+}
+
+
+/* ====== SUBIECTE ====== */
+.section_content_subiecte-bac {
+  margin-left: 5%;
+  margin-right: 5%;
+  max-width: 700px;
+  height: 80em;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.subiecte-bac_grid-container {
+  display: grid;
+  height: 40px;
+  grid-template-rows: repeat(4, auto);
+  row-gap: 17em;
+}
+
+.text_nume-subiect-bac {
+  margin-top: 6%;
+  font-family: 'Red Hat Text';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.subiecte-bac_grid {
+  display: grid;
+  height: 40px;
+  grid-template-rows: repeat(4, auto);
+  row-gap: 2.5em;
+}
+
+.subiecte-bac-button_grid {
+  margin: auto;
+  height: 35px;
+  width: 140px;
+  background: #FFFFFF;
+  box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  text-align: center;
+  border: none;
+  font-family: 'Red Hat Text';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: black;
+}
+
+.subiecte-bac-button_grid:hover {
+  background-color: rgb(172, 172, 172);
+}
+
+.footer_subiecte {
+  margin-bottom: 10%;
+}
+
+
+/* Active link */
+
+
+/* Change background header */

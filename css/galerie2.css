@@ -1,0 +1,29 @@
+body{margin: 0}
+.____container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  background-color: #1F262C;
+  padding: 15px;
+}
+.____container img {
+  width: 100%;
+  display: block;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+  transition: all 100ms ease-out;
+}
+.____container img:hover {
+  transform: scale(1.04);
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+}
+
+buton_galerie {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+
+
